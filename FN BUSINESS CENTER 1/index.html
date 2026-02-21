@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FN BUSINESS CENTER</title>
+  <!-- TAMBAHANNNNN 2 -->
+  <!-- <link rel="stylesheet" /> -->
+  <meta name="description" content="Situs profesional untuk pedagang jasa — desain penuh warna, responsive, tanpa PHP." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent1:#ff6b6b; /* coral */
+      --accent2:#4ade80; /* green */
+      --accent3:#60a5fa; /* sky */
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --maxw:1100px;
+      --gap:20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071026);color:#e6eef8}
+    .container{max-width:var(--maxw);margin:0 auto;padding:36px}
+
+    /* tambahan 1 */
+    .logo2-fns {
+      height: 10px;
+      width: 10px;
+    }
+
+    .logo1 span {
+      color: rgb(236, 255, 65);
+    }
+
+    .a-content1 {
+      height: 80px;
+      width: 80px;
+    }
+
+    .logo2 span {
+      color: rgb(79, 79, 254);
+    }
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent3));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a:hover{color:#fff;}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;margin-top:26px;align-items:center}
+    .hero-card{background:linear-gradient(180deg,var(--glass),transparent);padding:28px;border-radius:20px;backdrop-filter:blur(6px);box-shadow:0 8px 40px rgba(2,6,23,.6)}
+    h1{margin:0;font-size:36px;line-height:1.05}
+    p.lead{color:var(--muted);margin-top:12px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:12px 18px;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent3));color:#061126}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .btn-primary1{background:linear-gradient(90deg,var(--accent1),var(--accent3));color:#061126; text-decoration: none;}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:22px}
+    .service{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;display:flex;gap:12px;align-items:center}
+    .icon{width:56px;height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .i1{background:linear-gradient(135deg,var(--accent3),var(--accent2))}
+    /* .i2{background:linear-gradient(135deg,var(--accent1),#fbbf24)} */
+    .i2{background:linear-gradient(135deg,var(--accent1),#656cff)}
+    .i3{background:linear-gradient(135deg,#a78bfa,#60a5fa)}
+    .i4{background:linear-gradient(135deg,#34d399,#60a5fa)}
+    /* .i5{background:linear-gradient(135deg,#fbbf24,#f75929,#ffffff)} */
+    .service h4{margin:0}
+    .service p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    /* Right card */
+    .promo{padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);}
+    .stat{display:flex;gap:12px;align-items:center}
+    .stat strong{font-size:20px}
+
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{background:var(--card);padding:18px;border-radius:16px}
+    .price{font-size:28px;font-weight:800}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;margin-top:24px}
+    .testi{background:rgba(255,255,255,0.02);padding:12px;border-radius:12px}
+
+    /* Contact */
+    form{display:grid;gap:10px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    .note{color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .pricing{grid-template-columns:repeat(1,1fr)}
+      .services{grid-template-columns:repeat(1,1fr)}
+    }
+
+    /* small animations */
+    .fade-up{transform:translateY(6px);opacity:0;animation:up .6s ease forwards}
+    @keyframes up{to{transform:none;opacity:1}}
+    /* CSS FNSTUDIO */
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- <div class="logo">FN</div> -->
+         <!-- <a  href="#" class="logo">FN<span>STUDIO</span> -->
+          <img src="20251211_221639.png" class="a-content1"/>
+         </a>
+        <div>
+          <div style="font-weight:700" class="logo1">FN BUSINESS <span>CENTER</span></div>
+          <div style="font-size:12px;color:var(--muted)">Menyediakan layanan dalam Beberapa Bidang</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Layanan</a>
+        <a href="#pricing">Harga</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card fade-up">
+        <h1>Jasa profesional yang memudahkan — Cepat, Andal, dan Terpercaya</h1>
+        <p class="lead">Kami membantu UKM dan pelaku usaha mendapatkan layanan berkualitas: desain, pemasaran, dokumentasi, dan layanan teknis.
+        </p>
+        <div class="cta">
+          <button class="btn btn-primary" id="bookBtn">Pesan Sekarang</button>
+        </div>
+
+        <div class="services" id="services" style="margin-top:18px">
+          <div class="service">
+            <div class="icon i1">D</div>
+            <div>
+              <h4>Desain & Branding</h4>
+              <p>Buat identitas visual yang kuat untuk bisnis Anda.</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="icon i2">M</div>
+            <div>
+              <h4>Pemasaran Digital</h4>
+              <p>Strategi iklan & sosial media yang terukur.</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="icon i3">T</div>
+            <div>
+              <h4>Teknis & Support</h4>
+              <p>Setting website, email, dan automasi ringan.</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="icon i4">F</div>
+            <div>
+              <h4>Foto & Video</h4>
+              <p>Konten visual profesional untuk produk & brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="promo fade-up" style="--delay:60ms">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Pengalaman</div>
+            <div class="stat"><strong>+4th</strong><div class="note">Bidang Bisnis</div></div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:13px;color:var(--muted)">Rating</div>
+            <div style="font-weight:800">4.9/5</div>
+          </div>
+        </div>
+
+        <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+        <div>
+          <div style="font-weight:700">Paket khusus bulan ini</div>
+          <div class="note">Diskon hingga 20% untuk paket jasa programmer (terbatas).</div>
+          <div style="margin-top:10px">
+            <button class="btn btn-primary" onclick="scrollToSection('pricing')">Dapatkan Diskon</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+      <div class="card fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:12px;color:var(--muted)" class="logo2">Paket Jasa Iklan from <span>FN Iklanindo Jaya</span></div>
+            <h3>Jasa Iklan</h3>
+          </div>
+          <div class="price">Rp 176.000</div>
+        </div>
+        <p class="note" style="margin-top:8px">Untuk usaha yang mau tumbuh — branding lengkap & kampanye sederhana.</p>
+        <ul class="note" style="margin-top:10px" >
+          <li>pasang banner iklan</li>
+        </ul>
+        <div style="margin-top:12px">
+          <button class="btn btn-primary" onclick="openContactPref('Starter')">Pesan Paket</button>
+          <!-- <button class="btn btn-primary" onclick="openContactPref('Starter')">lihat lainnya</button> -->
+           <a class="btn btn-primary1" href="fniklan.html">lihat lainnya</a>
+        </div>
+      </div>
+
+      <div class="card fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:12px;color:var(--muted)" class="logo2">Paket Jasa programmer from <span>FN WEBSTAR </span></div>
+            <h3>Pro</h3>
+          </div>
+          <div class="price">Rp 3.000.000</div>
+        </div>
+        <p class="note" style="margin-top:8px">Penyedia jasa pengembangan website profesional, aman, cepat dan terpercaya. siap menjadi partner digital anda.</p>
+        <ul class="note" style="margin-top:10px">
+          <li>Website 3 halaman</li>
+          <li>Manajemen iklan 1 bulan</li>
+          <li>akun toko online</li>
+        </ul>
+        <div style="margin-top:12px">
+          <button class="btn btn-primary" onclick="openContactPref('Pro')">Pesan Paket</button>
+          <!-- <button class="btn btn-primary" onclick="openContactPref('Pro')">Lihat Lainnya</button> -->
+          <a class="btn btn-primary1" href="fnwebstar.html">lihat lainnya</a>
+        </div>
+      </div>
+
+      <div class="card fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:12px;color:var(--muted)" class="logo2">Paket Jasa percetakan from <span>FN Studio</span></div>
+            <h3>Bisnis</h3>
+          </div>
+          <div class="price">Rp 120.000</div>
+        </div>
+        <p class="note" style="margin-top:8px">Solusi penuh untuk perusahaan — tim kreatif & dukungan terpadu.</p>
+        <ul class="note" style="margin-top:10px">
+          <li>banner,stempel, </li>
+          <li>sablon baju,stiker</li>
+          <li>kartu nama, cetak foto</li>
+          <li>branding lengkap</li>
+        </ul>
+        <div style="margin-top:12px">
+          <button class="btn btn-primary" onclick="openContactPref('Bisnis')">Pesan Paket</button>
+          <!-- <button class="btn btn-primary" onclick="openContactPref('Bisnis')">Lihat Lainnya</button> -->
+           <!-- <a class="btn btn-primary" onclick="openContactPref('Bisnis')">Lihat Lainnya</a> -->
+            <a class="btn btn-primary1" href="fnstudio.html">Lihat Lainnya</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="testi fade-up">
+        <strong>"Bantu banget! Brand saya jadi lebih profesional."</strong>
+        <div class="note">— Dewi Hana, Owner Toko Online</div>
+      </div>
+      <div class="testi fade-up">
+        <strong>"Timnya responsif dan cepat."</strong>
+        <div class="note">— Furqon alexander, Devoleper Website</div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:24px">
+      <div class="hero-card">
+        <h3>Hubungi Kami</h3>
+        <p class="note">Isi form berikut, atau langsung hubungi melalui email/WA di bawah.</p>
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <input type="text" id="name" placeholder="Nama lengkap" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="phone" placeholder="Nomor/WhatsApp" />
+          <textarea id="message" rows="4" placeholder="Pesan / kebutuhan Anda" required></textarea>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            <a class="btn btn-primary1" type="submit" href="https://wa.me/6283111689329">chat ke wa</a>
+            <div class="note">atau <a href="mailto:furkonjr100@gmail.com" style="color:var(--accent3)">furkonjr100@gmail.com</a></div>
+          </div>
+          <div id="formResult" class="note" style="margin-top:8px"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer style="margin-top:28px;display:flex;justify-content:space-between;align-items:center;color:var(--muted)">
+      <div>© <span id="year"></span> FN Business Center — Semua hak dilindungi</div>
+      <!-- KERRR DI UPDATEEE -->
+      <!-- <div class="note">Email: <a href="mailto:furkonjr100@gmail.com" style="color:var(--accent2)">furkonjr100@gmail.com</a> · WA: <a href="https://wa.me/6283111689329" style="color:var(--accent1)">+62 831-1168-9329</a> -->
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+    function openContactPref(pkg){scrollToSection('contact');document.getElementById('message').value = 'Saya tertarik paket: '+pkg}
+
+    // Simulate submission without server: creates mailto link and stores copy in localStorage
+    function handleSubmit(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const message=document.getElementById('message').value.trim();
+      if(!name||!email||!message){document.getElementById('formResult').textContent='Isi semua field yang wajib.';return false}
+
+      const subject = encodeURIComponent('Permintaan layanan dari '+name);
+      const body = encodeURIComponent('Nama: '+name+'\nEmail: '+email+'\nWA: '+phone+'\n\nPesan:\n'+message);
+      // open mail client
+      window.location.href = 'mailto:furkonjr100@gmail.com?subject='+subject+'&body='+body;
+      
+      // save a copy locally
+      const saved = JSON.parse(localStorage.getItem('fnjasa_messages')||'[]');
+      saved.push({name,email,phone,message,date:new Date().toISOString()});
+      localStorage.setItem('fnjasa_messages',JSON.stringify(saved));
+      document.getElementById('formResult').textContent='Pesan disiapkan di email Anda. Salinan tersimpan secara lokal.';
+      return false;
+    }
+
+    // CTA booking button -> quick preset message
+    document.getElementById('bookBtn').addEventListener('click',()=>{
+      openContactPref('Konsultasi Cepat');
+      scrollToSection('contact');
+      document.getElementById('name').focus();
+    });
+
+    // reveal animations
+    window.addEventListener('load',()=>{document.querySelectorAll('.fade-up').forEach((el,i)=>{el.style.animationDelay=(i*80)+'ms'})})
+  </script>
+</body>
+</html>
